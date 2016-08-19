@@ -8,7 +8,7 @@ This Device is available from ControlEverything.com [SKU: PCA9685_I2CPWM8W16I12V
 
 https://www.controleverything.com/content/FET-Drivers?sku=PCA9685_I2CPWM8W16I12V
 
-This Sample code can be used with Raspberry pi, Arduino, and Particle.
+This Sample code can be used with Raspberry Pi, Arduino, and Particle Photon and Onion Omega.
 
 ## Java
 Download and install pi4j library on Raspberry pi. Steps to install pi4j are provided at:
@@ -61,5 +61,25 @@ https://build.particle.io/build/
 Verify and flash the code on your Photon. Code output is shown in logs at dashboard:
 
 https://dashboard.particle.io/user/logs
+
+## Onion Omega
+
+Get Started and setting up the Onion Omega according to steps provided at :
+
+https://wiki.onion.io/Get-Started
+
+To install the Python module, run the following commands:
+```cpp
+opkg update
+```
+```cpp
+opkg install python-light pyOnionI2C
+```
+
+Download (or git pull) the code in Onion Omega. Run the program.
+
+```cpp
+$> python PCA9685.py
+```
 
 #####The code output is PWM dimming of leds.
